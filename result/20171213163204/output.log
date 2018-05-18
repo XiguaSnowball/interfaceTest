@@ -1,0 +1,27 @@
+2017-12-13 16:32:04,846 - root - INFO - ********************TEST START*********************
+2017-12-13 16:32:04,847 - root - INFO - ----------Case Start----------------
+2017-12-13 16:32:05,149 - root - INFO - 接口信息:{casename:/paper/single/info_add}返回结果:{status:0,msg:ok,data:{'insert_id': '200001159'}}
+2017-12-13 16:32:05,149 - root - INFO - --比较status
+2017-12-13 16:32:05,150 - root - ERROR - 报错信息如下
+Traceback (most recent call last):
+  File "/Users/gzit000567/PycharmProjects/interfaceTest/testCase/book/testPaperSingleAdd.py", line 103, in checkResult
+    self.assertEqual(status, self.status, msg='status与预期不同')
+  File "/Users/gzit000567/.pyenv/versions/3.5.1/lib/python3.5/unittest/case.py", line 820, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Users/gzit000567/.pyenv/versions/3.5.1/lib/python3.5/unittest/case.py", line 813, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1 : status与预期不同
+2017-12-13 16:32:05,153 - root - INFO - ---------------Case End----------------
+2017-12-13 16:32:05,155 - root - INFO - ----------Case Start----------------
+2017-12-13 16:32:05,479 - root - INFO - 接口信息:{casename:/paper/single/info_add}返回结果:{status:0,msg:ok,data:{'insert_id': '200001160'}}
+2017-12-13 16:32:05,479 - root - INFO - --比较status
+2017-12-13 16:32:05,479 - root - INFO - --status与预期相同
+2017-12-13 16:32:05,644 - root - INFO - --Connect DB successfully!
+2017-12-13 16:32:05,754 - root - INFO - --执行sql
+2017-12-13 16:32:05,754 - root - INFO - --获取查询结果:(200001160, 'guaguatest555', '', '', '3', '2', '4', '2', '3', 16, '{"p":"??","c":"??","a":"???","y":"2017","m":"05"}', '3', 1, 0, 6, '', '', '', '[[1,5]]', '[[6,6]]', 0, 1, 0, '', 0, 0, 0, 0, 'N', 'N', datetime.datetime(2017, 12, 13, 16, 32, 5), datetime.datetime(2017, 12, 13, 16, 32, 5), 1, 1, 3, 0, '1', None, None, None, None, None, None, None, 'N', 0, 0, '', '', '', 'N')
+2017-12-13 16:32:05,755 - root - INFO - --与库中结果比较
+2017-12-13 16:32:05,755 - root - INFO - --结果一致，单卷添加成功
+2017-12-13 16:32:05,755 - root - INFO - --Database closed!
+2017-12-13 16:32:05,755 - root - INFO - ---------------Case End----------------
+2017-12-13 16:32:05,756 - root - INFO - ********************TEST END*********************
+2017-12-13 16:32:05,757 - root - INFO - Doesn't send report email to developer.

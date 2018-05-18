@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page>
+    <database name="book">
+
+        <table name="book">
+            <sql id="select_book_id">
+                SELECT * FROM book WHERE book_id= %s
+            </sql>
+        </table>
+
+        <!--<table name="testtable">-->
+        <!--<sql id="delete_book">-->
+        <!--DELETE FROM book WHERE book_id=%s-->
+        <!--</sql>-->
+        <!--</table>-->
+
+
+    </database>
+</page>
